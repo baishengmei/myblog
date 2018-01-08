@@ -16,6 +16,9 @@ var multer = require('multer');
 var routes = require('./routes/index');
 var settings = require('./settings');
 
+// 也就是对应的connect-flash模块，flash是一个在session中用于存储信息的特定区域。
+// 信息写入flash，下一次显示完毕后即被清楚，典型的应用是结合重定向的功能，确保信息是提供给下一个被渲染的页面
+// github地址： https://github.com/jaredhanson/connect-flash
 var flash = require('connect-flash');
 
 var app = express();

@@ -23,11 +23,13 @@ $ yarn install
 - 在我本人的mac上，启动方式为 ：cd /usr/local/bin 
 - 再执行sudo mongod 和 sudo mongo
 
-接着，启动项目：yarn start:test 或者 npm start:test
+接着，启动项目：yarn start:test 或者 npm start:test 或者 supervisor app
 
 最后，浏览器访问：localhost:3003。
 
-** 注意：端口号，可在app.js文件app.set('port', process.env.PORT || 3003)中进行修改 **
+** 注意1：端口号，可在app.js文件app.set('port', process.env.PORT || 3003)中进行修改 **
+** 注意2: 已全局安装supervisor，可使用supervisor app启动项目。。每当我们保存修改的文件时，supervisor都会自动帮我们重启应用**
+
 
 
 ### 准备文件夹及权限
@@ -64,3 +66,6 @@ $ yarn install
 └── setting.js                  # The settings about the mongodb
 └── package.json                # The list of 3rd party libraries and utilities
 ```
+
+### 常见问题
+- [参考地址](https://github.com/baishengmei/webnote/issues)

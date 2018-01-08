@@ -1,0 +1,15 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+
+build
+coverage
+mochawesome-reports
+node_modules
+uploads
+ncp-debug.log
+npm-debug.log
+docs
+logs
+.idea
+*.iml
+.DS_Store
